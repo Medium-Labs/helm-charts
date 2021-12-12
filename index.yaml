@@ -1,22 +1,11 @@
 apiVersion: v1
 entries:
-  helm-chart-test:
-  - apiVersion: v2
-    appVersion: 1.16.0
-    created: "2021-12-12T18:06:04.836962Z"
-    description: A Helm chart for Kubernetes
-    digest: 231f554f3851c779fe5458792651f65fbe06ae590de77765f8423908928badb3
-    name: helm-chart-test
-    type: application
-    urls:
-    - https://medium-labs.github.io/helm-charts/helm-chart-test-0.1.0.tgz
-    version: 0.1.0
   nodejs:
   - apiVersion: v2
     appVersion: 0.1.0
-    created: "2021-12-12T18:06:04.837459Z"
+    created: "2021-12-12T18:06:36.997936Z"
     description: A Helm chart for nodejs apps
-    digest: 226ec58da31997ff5c4946a848bc086f01f7ae6c7d60488ba03878f358e92732
+    digest: d8f730613947880ae3df728e093c951d434a45d78a62adaf606853f2f83e4782
     icon: https://nodejs.org/static/images/logo.svg
     keywords:
     - node
@@ -29,4 +18,4 @@ entries:
     urls:
     - https://medium-labs.github.io/helm-charts/nodejs-0.1.0.tgz
     version: 0.1.0
-generated: "2021-12-12T18:06:04.836155Z"
+generated: "2021-12-12T18:06:36.997049Z"

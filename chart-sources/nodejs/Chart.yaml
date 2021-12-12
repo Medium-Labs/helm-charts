@@ -16,5 +16,5 @@ keywords:
   - javascript
   - nodejs
 sources:
-  - https://medium-labs.github.io/helm-charts/nodejs-chart
+  - https://medium-labs.github.io/helm-charts/nodejs
 icon: https://nodejs.org/static/images/logo.svg

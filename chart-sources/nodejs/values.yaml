@@ -45,10 +45,10 @@ service:
   type: ClusterIP
 
 ingress:
-  enabled: false
+  enabled: true
   className: "nginx"
   certsIssuer: "letsencrypt-prod"
-  ssl: "true"
+  ssl: true
   hosts:
     - host: chart-example.local
       paths:

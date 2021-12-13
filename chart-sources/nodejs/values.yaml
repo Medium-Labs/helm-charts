@@ -7,8 +7,8 @@ replicaCount: 1
 applicationPort: 8080
 
 image:
-  repository: google-samples/hello-app
-  tag: latest
+  repository: "gcr.io/google-samples/hello-app"
+  tag: "1.0"
   pullPolicy: IfNotPresent
 
 imagePullSecrets: [ ]
@@ -45,10 +45,10 @@ service:
   type: ClusterIP
 
 ingress:
-  enabled: true
+  enabled: false
   className: "nginx"
   certsIssuer: "letsencrypt-prod"
-  ssl: true
+  ssl: false
   hosts:
     - host: chart-example.local
       paths:

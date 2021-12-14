@@ -2,7 +2,7 @@
 # This is a YAML-formatted file.
 # Declare variables to be passed into your templates.
 
-global: {}
+global: { }
 replicaCount: 1
 applicationPort: 8080
 
@@ -37,7 +37,7 @@ securityContext: {
   # capabilities:
   #   drop:
   #   - ALL
-  # readOnlyRootFilesystem: true
+# readOnlyRootFilesystem: true
 # runAsNonRoot: true
 # runAsUser: 1000
 
@@ -54,7 +54,7 @@ ingress:
       paths:
         - path: /
           pathType: ImplementationSpecific
-  tls: []
+  tls: [ ]
 #  tls:
 #    - secretName: mediumrare-tls
 #      hosts:
@@ -81,6 +81,7 @@ tolerations: [ ]
 
 affinity: { }
 
-env: {
-  EXAMPLE_ENV_VAR: "false"
-}
+env: {}
+
+useEnvFromSecrets: false
+

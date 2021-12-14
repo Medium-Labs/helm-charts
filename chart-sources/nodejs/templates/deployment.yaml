@@ -36,6 +36,11 @@ spec:
           - name: {{ $key }}
             value: {{ tpl ($val | quote) $ }}
           {{- end }}
+          {{- if .Values.useEnvFromSecrets }}
+          envFrom:
+            - secretRef:
+                name: {{ .Release.Name }}-vault
+          {{- end }}
           {{- if .Values.applicationPort }}
           ports:
             - containerPort: {{ .Values.applicationPort }}

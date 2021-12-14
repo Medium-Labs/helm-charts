@@ -19,6 +19,7 @@ metadata:
   {{- include "mediumlabs.labels" . | nindent 2 }}
   annotations:
     cert-manager.io/cluster-issuer: {{ .Values.ingress.certsIssuer }}
+    nginx.ingress.kubernetes.io/from-to-www-redirect: "true"
     {{- if .Values.ingress.ssl }}
     ingress.kubernetes.io/force-ssl-redirect: "true"
     ingress.kubernetes.io/ssl-redirect: "true"

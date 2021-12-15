@@ -3,7 +3,7 @@
 # Declare variables to be passed into your templates.
 
 global: { }
-replicaCount: 1
+replicaCount: 2
 applicationPort: 8080
 
 image:
@@ -75,5 +75,6 @@ affinity: { }
 useEnvFromSecrets: false
 
 environment:
-  - EXAMPLE_ENV_VAR: "false"
+  - name: EXAMPLE_ENV_VAR
+    value: "false"
 

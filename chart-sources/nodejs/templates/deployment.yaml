@@ -32,10 +32,7 @@ spec:
           securityContext:
             {{- toYaml .Values.securityContext | nindent 12 }}
           env:
-          {{- range $key, $val := .Values.environment }}
-          - name: {{ $key }}
-            value: {{ tpl ($val | quote) $ }}
-          {{- end }}
+          {{- toYaml .Values.environment | nindent 12 }}
           {{- if .Values.useEnvFromSecrets }}
           envFrom:
             - secretRef:
@@ -49,12 +46,22 @@ spec:
           {{- end }}
           livenessProbe:
             httpGet:
-              path: /
+              path: /health
               port: http
+            initialDelaySeconds: 30
+            periodSeconds: 10
+            timeoutSeconds: 5
+            successThreshold: 1
+            failureThreshold: 6
           readinessProbe:
             httpGet:
-              path: /
+              path: /health
               port: http
+            initialDelaySeconds: 5
+            periodSeconds: 10
+            timeoutSeconds: 5
+            successThreshold: 1
+            failureThreshold: 6
           resources:
             {{- toYaml .Values.resources | nindent 12 }}
       {{- with .Values.nodeSelector }}

@@ -3,9 +3,9 @@ entries:
   nodejs:
   - apiVersion: v2
     appVersion: 0.1.0
-    created: "2021-12-15T14:10:06.529523Z"
+    created: "2021-12-16T22:17:54.753766Z"
     description: A Helm chart for nodejs apps
-    digest: 1ac72ba2cb82aa846b966768207b93f0aeb15135a9e4ffe14ca2f107e9f55b7d
+    digest: c9d8eade0cc799f7470b011f27e4b7cd3197ddeee9d348e29b2e70a3b5288a94
     icon: https://nodejs.org/static/images/logo.svg
     keywords:
     - node
@@ -18,4 +18,4 @@ entries:
     urls:
     - https://medium-labs.github.io/helm-charts/nodejs-0.1.0.tgz
     version: 0.1.0
-generated: "2021-12-15T14:10:06.5287Z"
+generated: "2021-12-16T22:17:54.752575Z"

@@ -18,9 +18,9 @@ metadata:
   name: {{ template "mediumlabs.releasename" . }}
   {{- include "mediumlabs.labels" . | nindent 2 }}
   annotations:
-    cert-manager.io/cluster-issuer: {{ .Values.ingress.certsIssuer }}
     nginx.ingress.kubernetes.io/from-to-www-redirect: "true"
-    {{- if .Values.ingress.ssl }}
+    {{- if .Values.ingress.tlsSecretName }}
+    cert-manager.io/cluster-issuer: {{ .Values.ingress.certsIssuer }}
     ingress.kubernetes.io/force-ssl-redirect: "true"
     ingress.kubernetes.io/ssl-redirect: "true"
     {{- end }}
@@ -28,16 +28,18 @@ spec:
   {{- if and .Values.ingress.className (semverCompare ">=1.18-0" .Capabilities.KubeVersion.GitVersion) }}
   ingressClassName: {{ .Values.ingress.className }}
   {{- end }}
-  {{- if .Values.ingress.tls }}
+  {{- if .Values.ingress.tlsSecretName }}
   tls:
-    {{- range .Values.ingress.tls }}
-    - hosts:
-        {{- range .hosts }}
-        - {{ . | quote }}
-        {{- end }}
-      secretName: {{ .secretName }}
-    {{- end }}
+    - secretName: {{.Values.ingress.tlsSecretName}}
+      hosts:
+        - {{.Values.ingress.host}}
+        - www.{{.Values.ingress.host}}
   {{- end }}
+  hosts:
+      - host: {{.Values.ingress.host}}
+        paths:
+          - path: /
+            pathType: Prefix
   rules:
     {{- range .Values.ingress.hosts }}
     - host: {{ .host | quote }}

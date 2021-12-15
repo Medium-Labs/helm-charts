@@ -47,18 +47,9 @@ service:
 ingress:
   enabled: false
   className: "nginx"
-  certsIssuer: "letsencrypt-prod"
-  ssl: false
-  hosts:
-    - host: chart-example.local
-      paths:
-        - path: /
-          pathType: ImplementationSpecific
-  tls: [ ]
-#  tls:
-#    - secretName: mediumrare-tls
-#      hosts:
-#        - mr-data-servicemediumrare.ai
+  certsIssuer: "letsencrypt-staging"
+  host: chart-example.local
+  tlsSecretName: "tls-secret-name"
 
 resources:
   requests:
@@ -81,7 +72,8 @@ tolerations: [ ]
 
 affinity: { }
 
-env: {}
-
 useEnvFromSecrets: false
+
+environment:
+  - EXAMPLE_ENV_VAR: "false"
 

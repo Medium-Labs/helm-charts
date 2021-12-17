@@ -47,7 +47,7 @@ service:
 ingress:
   enabled: false
   className: "nginx"
-  certsIssuer: "letsencrypt-staging"
+  certsIssuer: "letsencrypt-prod"
   host: chart-example.local
   tlsSecretName: "tls-secret-name"
 

@@ -5,6 +5,7 @@
 global: { }
 replicaCount: 2
 applicationPort: 8080
+healthEndpoint: /health
 
 image:
   repository: "gcr.io/google-samples/hello-app"

@@ -50,13 +50,14 @@ ingress:
   ssl: false
   className: "nginx"
   host: chart-example.local
+  tlsSecretName: "tls-secret-name"
 
 resources:
   requests:
     memory: "64Mi"
     cpu: "25m"
   limits:
-    memory: "512Mi"
+    memory: "128Mi"
     cpu: "500m"
 
 autoscaling:

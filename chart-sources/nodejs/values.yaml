@@ -81,3 +81,12 @@ environment:
 #Container args
 extraArgs: [ ]
 #  "--argument1=value1"
+
+persistence:
+  enabled: false
+  persistentVolume: false
+  mountPath: /storage
+#  size: "2Gi"
+#  accessModes:
+#    - ReadWriteMany
+

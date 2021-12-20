@@ -3,9 +3,9 @@ entries:
   golang:
   - apiVersion: v2
     appVersion: 0.1.0
-    created: "2021-12-19T00:47:32.383199Z"
+    created: "2021-12-20T12:21:59.524063Z"
     description: A Helm chart for golang apps
-    digest: 9d08189976d03b62f9dd64cc28b15d3bed890b01bbbb63451e51be296ed7d001
+    digest: d4b6d6e0b7d1e28aaeeb3c834a4231e49658ccec7a41401162cf740390244eee
     icon: https://go.dev/images/go-logo-blue.svg
     keywords:
     - node
@@ -21,9 +21,9 @@ entries:
   nodejs:
   - apiVersion: v2
     appVersion: 0.1.0
-    created: "2021-12-19T00:47:32.383819Z"
+    created: "2021-12-20T12:21:59.524601Z"
     description: A Helm chart for nodejs apps
-    digest: 0f18b1c15b5b657bd19fa3b6adc2251f02f23e3ede9ca1adf630860c70cb2c72
+    digest: 0a0b0b64211cc0a4c9aa78d12f193cdd9583a5f178462e038f3c048ba650d288
     icon: https://nodejs.org/static/images/logo.svg
     keywords:
     - node
@@ -36,4 +36,4 @@ entries:
     urls:
     - https://medium-labs.github.io/helm-charts/nodejs-0.1.0.tgz
     version: 0.1.0
-generated: "2021-12-19T00:47:32.38237Z"
+generated: "2021-12-20T12:21:59.523281Z"

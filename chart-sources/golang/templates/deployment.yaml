@@ -31,13 +31,17 @@ spec:
           imagePullPolicy: {{ .Values.image.pullPolicy }}
           securityContext:
             {{- toYaml .Values.securityContext | nindent 12 }}
-          env:
-          {{- toYaml .Values.environment | nindent 12 }}
+          {{- with .Values.extraArgs }}
+          args:
+            {{- toYaml . | nindent 12 }}
+          {{- end }}
           {{- if .Values.useEnvFromSecrets }}
           envFrom:
             - secretRef:
-                name: {{ .Release.Name }}-vault
+                name: vault-{{ .Release.Name }}
           {{- end }}
+          env:
+            {{- toYaml .Values.environment | nindent 12 }}
           {{- if .Values.applicationPort }}
           ports:
             - containerPort: {{ .Values.applicationPort }}

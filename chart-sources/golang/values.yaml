@@ -79,3 +79,6 @@ environment:
   - name: EXAMPLE_ENV_VAR
     value: "false"
 
+#Container args
+extraArgs: [ ]
+#  "--argument1=value1"

@@ -3,9 +3,9 @@ entries:
   golang:
   - apiVersion: v2
     appVersion: 0.1.0
-    created: "2022-01-09T18:41:36.46706Z"
+    created: "2022-01-09T20:06:27.114394Z"
     description: A Helm chart for golang apps
-    digest: e3e69d97d5c5843e350903b5602091464c5880cee892a90a7f1896de54cd558b
+    digest: ad2084aecb2d77b819cc3ad1802f648ca8880e3ef8c47f8578822cba5d650a78
     icon: https://go.dev/images/go-logo-blue.svg
     keywords:
     - node
@@ -18,12 +18,62 @@ entries:
     urls:
     - https://medium-labs.github.io/helm-charts/golang-0.1.0.tgz
     version: 0.1.0
+  imgproxy:
+  - annotations:
+      artifacthub.io/changes: |
+        - kind: added
+          description: Support for the ArtifactHub
+      artifacthub.io/containsSecurityUpdates: "false"
+      artifacthub.io/images: |
+        - name: impgroxy
+          image: darthsim/imgproxy:v2.16.6
+      artifacthub.io/license: MIT-open-group
+      artifacthub.io/links: |
+        - name: imgproxy-helm chart on Github
+          url: https://github.com/imgproxy/imgproxy-helm
+        - name: the source code of imgproxy on Github
+          url: https://github.com/imgproxy/imgproxy
+        - name: the project documentation
+          url: https://imgproxy.net/
+      artifacthub.io/maintainers: |
+        - name: darthsim
+          email: darthsim@evilmartians.com
+        - name: dragonsmith
+          email: agon.smith@gmail.com
+        - name: nepalez
+          email: nepalez@evilmartians.com
+      artifacthub.io/prerelease: "false"
+    apiVersion: v1
+    appVersion: 3.0.0.beta2
+    created: "2022-01-09T20:06:27.118783Z"
+    description: A fast and secure standalone server for resizing and converting remote
+      images. The main principles of imgproxy are simplicity, speed, and security.
+    digest: fe3b3d86f39f9e5c8100bb51d0cea610f93b8a9309281fe90e4305343a001819
+    home: https://github.com/imgproxy/imgproxy
+    icon: https://cdn.rawgit.com/imgproxy/imgproxy/master/logo.svg
+    keywords:
+    - imgproxy
+    - image
+    - processing
+    maintainers:
+    - email: darthsim@evilmartians.com
+      name: darthsim
+    - email: agon.smith@gmail.com
+      name: dragonsmith
+    - email: nepalez@evilmartians.com
+      name: nepalez
+    name: imgproxy
+    sources:
+    - https://github.com/imgproxy/imgproxy
+    urls:
+    - https://medium-labs.github.io/helm-charts/imgproxy-0.8.9.tgz
+    version: 0.8.9
   nodejs:
   - apiVersion: v2
     appVersion: 0.1.0
-    created: "2022-01-09T18:41:36.46762Z"
+    created: "2022-01-09T20:06:27.119802Z"
     description: A Helm chart for nodejs apps
-    digest: 712cb84a586b765297a06f153929e0bb44e9f2a03749ac264e977cabd08a7d9f
+    digest: 84dc4a4d7c1e790ce9b491c8c5a8b8255fb3672dd988e53150fc364060a60a3b
     icon: https://nodejs.org/static/images/logo.svg
     keywords:
     - node
@@ -36,4 +86,4 @@ entries:
     urls:
     - https://medium-labs.github.io/helm-charts/nodejs-0.1.0.tgz
     version: 0.1.0
-generated: "2022-01-09T18:41:36.465057Z"
+generated: "2022-01-09T20:06:27.113318Z"

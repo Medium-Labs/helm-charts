@@ -1,0 +1,20 @@
+{{- with .Values.resources.podDisruptionBudget -}}
+{{- if .enabled }}
+apiVersion: policy/v1beta1
+kind: PodDisruptionBudget
+metadata:
+  name: {{ template "imgproxy.fullname" $ }}-pdb
+  labels:
+    imgproxy: "true"
+spec:
+  {{- if .minAvailable }}
+  minAvailable: {{ .minAvailable }}
+  {{- end }}
+  {{- if .maxUnavailable }}
+  maxUnavailable: {{ .maxUnavailable }}
+  {{- end }}
+  selector:
+    matchLabels:
+      app: {{ template "imgproxy.fullname" $ }}
+{{- end -}}
+{{- end }}

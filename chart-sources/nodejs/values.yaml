@@ -50,7 +50,7 @@ ingress:
   ssl: false
   className: "nginx"
   host: chart-example.local
-  extraAnnotations: {}
+  extraAnnotations: { }
 
 resources:
   requests:

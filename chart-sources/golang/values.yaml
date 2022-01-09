@@ -51,6 +51,7 @@ ingress:
   className: "nginx"
   host: chart-example.local
   tlsSecretName: "tls-secret-name"
+  extraAnnotations: { }
 
 resources:
   requests:

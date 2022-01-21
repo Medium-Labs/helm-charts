@@ -86,6 +86,7 @@ extraArgs: [ ]
 persistence:
   enabled: false
   persistentVolume: false
+  reclaimPolicy: Retain
   mountPath: /storage
 #  size: "2Gi"
 #  accessModes:

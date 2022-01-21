@@ -9,6 +9,7 @@ spec:
   storageClassName: {{ .Release.Name }}-storage-class
   capacity:
     storage: {{ .Values.persistence.size }}
+  persistentVolumeReclaimPolicy: {{ .Values.persistence.reclaimPolicy }}
   accessModes:
     {{- range .Values.persistence.accessModes }}
     - {{ . | quote }}

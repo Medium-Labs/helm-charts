@@ -3,9 +3,9 @@ entries:
   golang:
   - apiVersion: v2
     appVersion: 0.1.0
-    created: "2022-01-09T20:06:27.114394Z"
+    created: "2022-01-21T08:51:48.575126Z"
     description: A Helm chart for golang apps
-    digest: ad2084aecb2d77b819cc3ad1802f648ca8880e3ef8c47f8578822cba5d650a78
+    digest: 211f8bb666515d54828101992f787d905958fc6a11727ec203ffcec21d1517d5
     icon: https://go.dev/images/go-logo-blue.svg
     keywords:
     - node
@@ -45,10 +45,10 @@ entries:
       artifacthub.io/prerelease: "false"
     apiVersion: v1
     appVersion: 3.0.0.beta2
-    created: "2022-01-09T20:06:27.118783Z"
+    created: "2022-01-21T08:51:48.577977Z"
     description: A fast and secure standalone server for resizing and converting remote
       images. The main principles of imgproxy are simplicity, speed, and security.
-    digest: fe3b3d86f39f9e5c8100bb51d0cea610f93b8a9309281fe90e4305343a001819
+    digest: c0372909137a80e7e628e3f1044dd55decc3f9cb35d1db5dcd3a585194fe8d62
     home: https://github.com/imgproxy/imgproxy
     icon: https://cdn.rawgit.com/imgproxy/imgproxy/master/logo.svg
     keywords:
@@ -71,9 +71,9 @@ entries:
   nodejs:
   - apiVersion: v2
     appVersion: 0.1.0
-    created: "2022-01-09T20:06:27.119802Z"
+    created: "2022-01-21T08:51:48.578825Z"
     description: A Helm chart for nodejs apps
-    digest: 84dc4a4d7c1e790ce9b491c8c5a8b8255fb3672dd988e53150fc364060a60a3b
+    digest: 2e18ff9d73704f8dffbe4d6a573c5e1922f7071aa114c25f4d273449ad799098
     icon: https://nodejs.org/static/images/logo.svg
     keywords:
     - node
@@ -86,4 +86,4 @@ entries:
     urls:
     - https://medium-labs.github.io/helm-charts/nodejs-0.1.0.tgz
     version: 0.1.0
-generated: "2022-01-09T20:06:27.113318Z"
+generated: "2022-01-21T08:51:48.574315Z"

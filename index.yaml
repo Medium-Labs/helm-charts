@@ -3,9 +3,9 @@ entries:
   golang:
   - apiVersion: v2
     appVersion: 0.1.0
-    created: "2022-01-21T09:45:29.556988Z"
+    created: "2022-02-02T22:47:29.73106Z"
     description: A Helm chart for golang apps
-    digest: 3bdefad52a15964eefe2c9a333b863b6e6872ee3a678f3d63d920c50dbff62c7
+    digest: ef7bf8d01ff476d896bd5ac0a347049121dbc9ac03f902491d0d72002162b251
     icon: https://go.dev/images/go-logo-blue.svg
     keywords:
     - node
@@ -45,7 +45,56 @@ entries:
       artifacthub.io/prerelease: "false"
     apiVersion: v1
     appVersion: 3.0.0.beta2
-    created: "2022-01-21T09:45:29.560148Z"
+    created: "2022-02-02T22:47:29.734221Z"
+    description: A fast and secure standalone server for resizing and converting remote
+      images. The main principles of imgproxy are simplicity, speed, and security.
+    digest: 901b14b67cbfc0aac369ef33df8e5e1ad9cf35a80802a3248dcfc33c8087d38b
+    home: https://github.com/imgproxy/imgproxy
+    icon: https://cdn.rawgit.com/imgproxy/imgproxy/master/logo.svg
+    keywords:
+    - imgproxy
+    - image
+    - processing
+    maintainers:
+    - email: darthsim@evilmartians.com
+      name: darthsim
+    - email: agon.smith@gmail.com
+      name: dragonsmith
+    - email: nepalez@evilmartians.com
+      name: nepalez
+    name: imgproxy
+    sources:
+    - https://github.com/imgproxy/imgproxy
+    urls:
+    - https://medium-labs.github.io/helm-charts/imgproxy-0.8.10.tgz
+    version: 0.8.10
+  - annotations:
+      artifacthub.io/changes: |
+        - kind: added
+          description: Support for the ArtifactHub
+      artifacthub.io/containsSecurityUpdates: "false"
+      artifacthub.io/images: |
+        - name: impgroxy
+          image: darthsim/imgproxy:v2.16.6
+      artifacthub.io/license: MIT-open-group
+      artifacthub.io/links: |
+        - name: imgproxy-helm chart on Github
+          url: https://github.com/imgproxy/imgproxy-helm
+        - name: the source code of imgproxy on Github
+          url: https://github.com/imgproxy/imgproxy
+        - name: the project documentation
+          url: https://imgproxy.net/
+      artifacthub.io/maintainers: |
+        - name: darthsim
+          email: darthsim@evilmartians.com
+        - name: dragonsmith
+          email: agon.smith@gmail.com
+        - name: nepalez
+          email: nepalez@evilmartians.com
+      artifacthub.io/prerelease: "false"
+    apiVersion: v1
+    appVersion: 3.0.0.beta2
+    created: "2022-02-02T22:47:29.737036Z"
     description: A fast and secure standalone server for resizing and converting remote
       images. The main principles of imgproxy are simplicity, speed, and security.
     digest: 18abd1fde6685c5222516017f08abb87be8c805747aa90f18173fbe0327c456f
@@ -71,9 +120,9 @@ entries:
   nodejs:
   - apiVersion: v2
     appVersion: 0.1.0
-    created: "2022-01-21T09:45:29.56071Z"
+    created: "2022-02-02T22:47:29.737741Z"
     description: A Helm chart for nodejs apps
-    digest: 9ca09dfb60d79d7a2a4f95c405e48b7a471c56eb1e147be579a7924acfe44e2c
+    digest: d3004e340e562e128aa20206567b3fe5d945568e27f0f5f510ca6ff8a7a1d3ee
     icon: https://nodejs.org/static/images/logo.svg
     keywords:
     - node
@@ -86,4 +135,4 @@ entries:
     urls:
     - https://medium-labs.github.io/helm-charts/nodejs-0.1.0.tgz
     version: 0.1.0
-generated: "2022-01-21T09:45:29.55597Z"
+generated: "2022-02-02T22:47:29.729792Z"

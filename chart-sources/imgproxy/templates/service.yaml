@@ -3,10 +3,11 @@ kind: Service
 metadata:
   name: "{{ template "imgproxy.fullname" $ }}"
   labels:
+    app.kubernetes.io/name: {{ template "imgproxy.fullname" $ }}
     heritage: {{ .Release.Service | quote }}
     release: {{ .Release.Name | quote }}
     chart: {{ template "imgproxy.chart" $ }}
-    app: {{ .Release.Name | quote }}
+    app: {{ template "imgproxy.fullname" $ }}
     imgproxy: "true"
 {{- with .Values.resources.service }}
 spec:
@@ -25,7 +26,7 @@ spec:
   {{- end }}
   {{- end }}
   selector:
-    app: "{{ template "imgproxy.fullname" $ }}"
+    app.kubernetes.io/name: {{ template "imgproxy.fullname" $ }}
   ports:
     - name: http
       port: 80

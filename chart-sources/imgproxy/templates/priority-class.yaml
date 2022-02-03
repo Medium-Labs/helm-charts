@@ -8,6 +8,7 @@ kind: PriorityClass
 metadata:
   name: "{{ $name }}"
   labels:
+    app.kubernetes.io/name: {{ template "imgproxy.fullname" $ }}
     imgproxy: "true"
 value: {{ (.level | max 0 | min 1000000000) }}
 globalDefault: false

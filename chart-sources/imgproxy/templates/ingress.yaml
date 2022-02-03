@@ -8,6 +8,7 @@ metadata:
   name: {{ template "imgproxy.fullname" $ }}
   labels:
     app: {{ template "imgproxy.fullname" $ }}
+    app.kubernetes.io/name: {{ template "imgproxy.fullname" $ }}
     chart: {{ template "imgproxy.chart" $ }}
     release: "{{ $.Release.Name }}"
     heritage: "{{ $.Release.Service }}"

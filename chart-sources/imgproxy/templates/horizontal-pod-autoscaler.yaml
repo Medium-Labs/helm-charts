@@ -12,7 +12,8 @@ metadata:
     heritage: {{ $.Release.Service | quote }}
     release: {{ $.Release.Name | quote }}
     chart: {{ template "imgproxy.chart" $ }}
-    app: {{ template "imgproxy.fullname" $ }}
+    app: {{ template "imgproxy.fullname" . }}
+    app.kubernetes.io/name: {{ template "imgproxy.fullname" $ }}
 spec:
   minReplicas: {{ $minCount }}
   maxReplicas: {{ $maxCount }}

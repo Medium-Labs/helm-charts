@@ -23,7 +23,7 @@ spec:
   {{- end }}
   selector:
     matchLabels:
-      app: {{ template "imgproxy.fullname" $ }}
+      app.kubernetes.io/name: {{ template "imgproxy.fullname" $ }}
   template:
     metadata:
       {{- with .Values.resources.pod }}

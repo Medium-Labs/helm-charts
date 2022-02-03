@@ -8,6 +8,7 @@ metadata:
   namespace: {{ .namespace }}
   {{- end }}
   labels:
+    app.kubernetes.io/name: {{ template "imgproxy.fullname" $ }}
     imgproxy: "true"
     {{- range $key, $value := .selector }}
     {{ $key }}: {{ $value | quote }}
@@ -24,8 +25,7 @@ spec:
       - {{ $.Release.Namespace | quote }}
   selector:
     matchLabels:
-      app: {{ $.Release.Name | quote }}
-      imgproxy: "true"
+      app.kubernetes.io/name: {{ template "imgproxy.fullname" $ }}
   {{- if .targetLabels }}
   targetLabels:
   {{- range $label := .targetLabels }}

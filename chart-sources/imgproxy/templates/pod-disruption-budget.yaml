@@ -5,6 +5,7 @@ kind: PodDisruptionBudget
 metadata:
   name: {{ template "imgproxy.fullname" $ }}-pdb
   labels:
+    app.kubernetes.io/name: {{ template "imgproxy.fullname" $ }}
     imgproxy: "true"
 spec:
   {{- if .minAvailable }}
@@ -15,6 +16,6 @@ spec:
   {{- end }}
   selector:
     matchLabels:
-      app: {{ template "imgproxy.fullname" $ }}
+      app.kubernetes.io/name: {{ template "imgproxy.fullname" $ }}
 {{- end -}}
 {{- end }}

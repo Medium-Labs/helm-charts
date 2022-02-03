@@ -3,9 +3,9 @@ entries:
   golang:
   - apiVersion: v2
     appVersion: 0.1.0
-    created: "2022-02-03T21:11:06.499749Z"
+    created: "2022-02-03T21:15:09.696364Z"
     description: A Helm chart for golang apps
-    digest: 100018f1b69b2c696c7b7fa9f32ca91100738f6e4b4c1db58bd7c16bc750bf81
+    digest: 13d2d70e96c1a96d3371294001085ad99984b236d6d813f2cc8a539adbf247da
     icon: https://go.dev/images/go-logo-blue.svg
     keywords:
     - node
@@ -45,10 +45,10 @@ entries:
       artifacthub.io/prerelease: "false"
     apiVersion: v1
     appVersion: 3.0.0.beta2
-    created: "2022-02-03T21:11:06.501985Z"
+    created: "2022-02-03T21:15:09.698565Z"
     description: A fast and secure standalone server for resizing and converting remote
       images. The main principles of imgproxy are simplicity, speed, and security.
-    digest: 6a82a4aa4071ae89a5e60143048d32d5f4afe1727730bdb590e9a3e4d7f77467
+    digest: c5d3ca3074a9a40ea2068bbac2a96fa31db22dc236c51188793f33664719d3fb
     home: https://github.com/imgproxy/imgproxy
     icon: https://cdn.rawgit.com/imgproxy/imgproxy/master/logo.svg
     keywords:
@@ -94,7 +94,7 @@ entries:
       artifacthub.io/prerelease: "false"
     apiVersion: v1
     appVersion: 3.0.0.beta2
-    created: "2022-02-03T21:11:06.504807Z"
+    created: "2022-02-03T21:15:09.700724Z"
     description: A fast and secure standalone server for resizing and converting remote
       images. The main principles of imgproxy are simplicity, speed, and security.
     digest: 18abd1fde6685c5222516017f08abb87be8c805747aa90f18173fbe0327c456f
@@ -120,9 +120,9 @@ entries:
   nodejs:
   - apiVersion: v2
     appVersion: 0.1.0
-    created: "2022-02-03T21:11:06.505495Z"
+    created: "2022-02-03T21:15:09.70145Z"
     description: A Helm chart for nodejs apps
-    digest: 3c47d7e92db8d1f29c7f91692a01b0c745ac731bcf4302d90ef9e05c005cf863
+    digest: 3c87ebabac73e8d9e6de0dff48b9a83370eb33ee60567e0422712dbd98dbb9aa
     icon: https://nodejs.org/static/images/logo.svg
     keywords:
     - node
@@ -135,4 +135,4 @@ entries:
     urls:
     - https://medium-labs.github.io/helm-charts/nodejs-0.1.0.tgz
     version: 0.1.0
-generated: "2022-02-03T21:11:06.498752Z"
+generated: "2022-02-03T21:15:09.695394Z"

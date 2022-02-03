@@ -29,6 +29,7 @@ spec:
     metadata:
       {{- with .Values.resources.pod }}
       labels:
+        app.kubernetes.io/name: {{ template "imgproxy.fullname" $ }}
         app: {{ template "imgproxy.fullname" $ }}
         imgproxy: "true"
         release: {{ $.Release.Name | quote }}

@@ -22,7 +22,6 @@ spec:
     - secretName: {{ .Values.ingress.host }}-prod
       hosts:
         - {{ .Values.ingress.host }}
-        - www.{{ .Values.ingress.host }}
   {{- end }}
   rules:
     - host: {{ .Values.ingress.host }}

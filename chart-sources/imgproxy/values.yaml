@@ -162,12 +162,10 @@ resources:
     #   kubernetes.io/tls-acme: "true"
     hosts: []
     #   - example.com
-    #   - www.example.com
     tls: []
     #   - secretName: example-com-tls
     #     hosts:
     #       - example.com
-    #       - www.example.com
 
     # Enable customization of pathType.
     #
